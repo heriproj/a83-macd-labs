@@ -29,7 +29,7 @@
     $host = "alhanifdev.mysql.database.azure.com";
     $user = "alhanifdev@alhanifdev";
     $pass = "Alhanif123";
-    $db = "crud_alhanif";
+    $db = "tb_pekerjaan";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
