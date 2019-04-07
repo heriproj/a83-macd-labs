@@ -28,13 +28,13 @@
  <?php
     $host = "alhanifdevsub.database.windows.net";
     $user = "alhanifdev@alhanifdev";
-    $pass = "Alhaerjaan";
+    $pass = "Alhanif123";
+    $db = "tb_pekerjaan";
 
-    try {z
+    try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    } catch(Exnif123";
-    $db = "tb_pekception $e) {
+    } catch(Exception $e) {
         echo "Failed: " . $e;
     }
 
