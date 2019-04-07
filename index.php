@@ -26,15 +26,15 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "alhanifdev.mysql.database.azure.com";
+    $host = "alhanifdevsub.database.windows.net";
     $user = "alhanifdev@alhanifdev";
-    $pass = "Alhanif123";
-    $db = "tb_pekerjaan";
+    $pass = "Alhaerjaan";
 
-    try {
+    try {z
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    } catch(Exception $e) {
+    } catch(Exnif123";
+    $db = "tb_pekception $e) {
         echo "Failed: " . $e;
     }
 
