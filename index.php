@@ -60,21 +60,21 @@
         echo "<h3>Your're registered!</h3>";
     } else if (isset($_POST['load_data'])) {
         try {
-            $sql_select = "SELECT * FROM Registration";
+            $sql_select = "SELECT * FROM tb_pekerjaan";
             $stmt = $conn->query($sql_select);
             $registrants = $stmt->fetchAll(); 
             if(count($registrants) > 0) {
                 echo "<h2>People who are registered:</h2>";
                 echo "<table>";
-                echo "<tr><th>Name</th>";
-                echo "<th>Email</th>";
-                echo "<th>Job</th>";
+                echo "<tr><th>Pekerjaaan</th>";
+                echo "<th>Detail Pekerjaan</th>";
+                echo "<th>Progrres</th>";
                 echo "<th>Date</th></tr>";
                 foreach($registrants as $registrant) {
-                    echo "<tr><td>".$registrant['name']."</td>";
-                    echo "<td>".$registrant['email']."</td>";
-                    echo "<td>".$registrant['job']."</td>";
-                    echo "<td>".$registrant['date']."</td></tr>";
+                    echo "<tr><td>".$registrant['pekerjaan']."</td>";
+                    echo "<td>".$registrant['detailpekerjaan']."</td>";
+                    echo "<td>".$registrant['prpogres']."</td>";
+                    echo "<td>".$registrant['tanggal']."</td></tr>";
                 }
                 echo "</table>";
             } else {
